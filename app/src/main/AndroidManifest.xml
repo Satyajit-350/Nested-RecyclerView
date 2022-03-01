@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NestedRecycler">
         <activity
+            android:name=".DetailActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".DetailActivity">
+
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/Recycler_view_parent"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/detail_rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/parent_list_items"
-        android:layout_margin="8dp"/>
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/child_list_items"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
