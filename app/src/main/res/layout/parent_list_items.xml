@@ -8,15 +8,15 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp">
 
         <TextView
             android:id="@+id/title_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextName"
-            android:textSize="22sp"
-            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
             android:layout_alignParentLeft="true"/>
 
         <TextView
@@ -25,14 +25,13 @@
             android:layout_height="wrap_content"
             android:text="More"
             android:layout_alignParentRight="true"
-            android:textSize="22sp"
-            android:layout_marginRight="10dp"/>
+            android:textSize="18sp" />
 
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/child_recycler_view"
-        android:layout_margin="10dp"
+        android:layout_margin="3dp"
         android:layout_width="match_parent"
         android:orientation="horizontal"
         tools:listitem="@layout/child_list_items"

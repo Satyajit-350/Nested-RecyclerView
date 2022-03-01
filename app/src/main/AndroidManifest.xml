@@ -11,7 +11,8 @@
         android:theme="@style/Theme.NestedRecycler">
         <activity
             android:name=".DetailActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:theme="@style/Theme.NestedRecycler.NoActionBar"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

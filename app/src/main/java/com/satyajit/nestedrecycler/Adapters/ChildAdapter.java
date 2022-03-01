@@ -16,9 +16,15 @@ import java.util.ArrayList;
 
 public class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ChildViewHolder> {
 
+    Context context;
     ArrayList<ChildRecyclerViewItem> childArrayList;
 
     public ChildAdapter(ArrayList<ChildRecyclerViewItem> childArrayList) {
+        this.childArrayList = childArrayList;
+    }
+
+    public ChildAdapter(Context context, ArrayList<ChildRecyclerViewItem> childArrayList) {
+        this.context = context;
         this.childArrayList = childArrayList;
     }
 

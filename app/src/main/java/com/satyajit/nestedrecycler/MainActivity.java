@@ -1,6 +1,7 @@
 package com.satyajit.nestedrecycler;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,7 +17,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     ParentAdapter parentAdapter;
-    ChildAdapter childAdapter;
 
     ArrayList<ParentRecyclerViewItem> parentList;
     ArrayList<ChildRecyclerViewItem> childArraylist;
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         parentRecyclerView = findViewById(R.id.Recycler_view_parent);
         parentRecyclerView.setHasFixedSize(true);

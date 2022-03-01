@@ -52,7 +52,7 @@ public class ParentAdapter extends RecyclerView.Adapter<ParentAdapter.ParentView
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, DetailActivity.class);
-                
+                context.startActivity(intent);
             }
         });
     }
